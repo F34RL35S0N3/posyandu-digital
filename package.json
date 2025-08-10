@@ -1,0 +1,36 @@
+{
+  "name": "posyandu-digital",
+  "version": "1.0.0",
+  "description": "Sistem Informasi Manajemen Posyandu untuk Monitoring Kesehatan Bayi dan Balita",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd posyandu-server && npm start",
+    "client": "cd login-signup-page && npm start",
+    "build": "cd login-signup-page && npm run build",
+    "install-all": "npm install && cd posyandu-server && npm install && cd ../login-signup-page && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/posyandu-digital.git"
+  },
+  "keywords": [
+    "posyandu",
+    "healthcare",
+    "bayi",
+    "balita",
+    "react",
+    "nodejs",
+    "express",
+    "sqlite"
+  ],
+  "author": "Kevin - Tim Hackathon Fahri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/posyandu-digital/issues"
+  },
+  "homepage": "https://github.com/your-username/posyandu-digital#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
